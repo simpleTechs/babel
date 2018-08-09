@@ -150,6 +150,7 @@ export default declare((api, options) => {
               buildClassProperty(ref, propNode, path.scope, state),
             );
           } else {
+            if (!propNode.value) continue; // Ignore instance property with no value in spec mode
             instanceBody.push(
               buildClassProperty(
                 t.thisExpression(),
