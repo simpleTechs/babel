@@ -34,6 +34,7 @@ package-lock.json
 /packages/babel-cli/test/tmp
 /packages/babel-node/test/tmp
 /packages/*/lib
+!/packages/babel-plugin-proposal-class-properties/lib
 .nyc_output
 /babel.sublime-workspace
 packages/babel-standalone/babel.js
